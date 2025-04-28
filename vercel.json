@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "reney-reveal-market-ghana-38-main/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "reney-reveal-market-ghana-38-main/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/reney-reveal-market-ghana-38-main/index.html"
+    }
+  ]
+} 
