@@ -1,18 +1,12 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "cd reney-reveal-market-ghana-38-main && npm install && npm run build",
+  "outputDirectory": "reney-reveal-market-ghana-38-main/dist",
+  "framework": "vite",
+  "rewrites": [
     {
-      "src": "reney-reveal-market-ghana-38-main/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "reney-reveal-market-ghana-38-main/dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/reney-reveal-market-ghana-38-main/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 } 
